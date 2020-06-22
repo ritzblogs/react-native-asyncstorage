@@ -13,7 +13,6 @@ const DEVICE_WIDTH = Dimensions.get('screen').width;
 const LOGOTYPE_WIDTH = 70;
 const TITLE_OFFSET_CENTER_ALIGN = DEVICE_WIDTH / 2 - LOGOTYPE_WIDTH / 2;
 
-
 import FirstPage from './pages/FirstPage';
 import SecondPage from './pages/SecondPage';
 import ThirdPage from './pages/ThirdPage';
@@ -60,8 +59,7 @@ function firstScreenStack({ navigation }) {
           headerLeft: () => <NavigationDrawerStructure navigationProps={navigation} 
           
           />,
-      
-         
+       
         
           headerTransparent: "true", headerTintColor: "#fff", headerTitleContainerStyle: { 
             left: TITLE_OFFSET_CENTER_ALIGN, // THIS RIGHT HERE

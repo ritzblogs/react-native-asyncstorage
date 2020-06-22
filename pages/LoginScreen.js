@@ -18,18 +18,6 @@ const LoginScreen = ({ navigation }) => {
 
   updateState = () => {
 
-    try {
-      AsyncStorage.getItem("4")
-        .then(req => {
-          var str = JSON.parse(req)
-          console.log(str)
-
-          console.log(str)
-        })
-    } catch (error) {
-
-    }
-
     if (uname == null) {
       alert('Please enter emp id')
       return
@@ -57,7 +45,6 @@ const LoginScreen = ({ navigation }) => {
             }
 
             setListd(myarr)
-
             updateData()
 
           }
